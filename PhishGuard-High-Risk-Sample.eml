@@ -1,0 +1,67 @@
+Return-Path: <security-alert@github.com>
+Received: from suspicious-relay.example (unknown [203.0.113.45])
+        by mail.example.test with ESMTPS id SAMPLE123;
+        Tue, 17 Nov 2026 06:40:00 +0000
+Authentication-Results: mail.example.test;
+        spf=fail smtp.mailfrom=github.com;
+        dkim=fail header.d=github.com;
+        dmarc=fail header.from=github.com
+From: "GitHub Security Team" <security-alert@github.com>
+Reply-To: "Account Recovery Desk" <github-recovery-team@protonmail.com>
+To: user@example.test
+Date: Tue, 17 Nov 2026 06:39:00 +0000
+Subject: [URGENT] FINAL WARNING: GitHub Account Will Be Suspended
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="PHISHGUARD_SAMPLE_BOUNDARY"
+
+--PHISHGUARD_SAMPLE_BOUNDARY
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+SECURITY ALERT - IMMEDIATE ACTION REQUIRED
+
+Hello,
+
+We detected unauthorized access attempts to your GitHub account and a
+suspicious SSH key that may have been added without your permission.
+
+Your account access is at immediate risk. Your repository access will be
+permanently suspended within 2 hours unless you verify your identity and
+confirm your password immediately.
+
+To prevent account suspension, credential theft, and permanent loss of
+access, use the emergency account verification page below:
+
+http://github-account-security-verify.test/urgent-login?account=sample-user
+
+If the page is unavailable, use this backup recovery page:
+
+http://github-recovery-center.test/restore?token=sample-token
+
+Failure to act immediately may result in account closure. Do not ignore this
+critical security warning. Verify your password, confirm your identity, and
+restore your account now.
+
+This is an educational phishing sample. The .test domains are reserved for
+testing and are not real login services.
+
+GitHub Security Team
+Automated Security Notification
+
+--PHISHGUARD_SAMPLE_BOUNDARY
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <h2>URGENT SECURITY ALERT</h2>
+    <p>Unauthorized access detected. Your account will be suspended within
+       2 hours unless you verify your identity immediately.</p>
+    <p><a href="http://github-account-security-verify.test/urgent-login?account=sample-user">
+       Verify your GitHub account now</a></p>
+    <p><a href="http://github-recovery-center.test/restore?token=sample-token">
+       Emergency recovery</a></p>
+    <p>Confirm your password to avoid permanent account closure.</p>
+  </body>
+</html>
+--PHISHGUARD_SAMPLE_BOUNDARY--
